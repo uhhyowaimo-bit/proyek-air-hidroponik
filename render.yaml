@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hydroponic-monitor
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: PREDICTION_SECRET_KEY
+        value: hidroponik-rahasia-123l
